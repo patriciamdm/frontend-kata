@@ -1,0 +1,33 @@
+input {
+    display: none;
+}
+
+label {
+    width: 35px;
+    height: 20px;
+    float: left;
+    border-radius: 100px;
+    position: relative;
+    transition: .3s ease;
+    background-color: rgb(207, 214, 223);
+}
+
+input[type=checkbox]:checked+label {
+    background: rgb(117, 117, 117);
+}
+
+input[type=checkbox]:checked+label:before {
+    left: 17px;
+}
+
+label:before {
+    transition: .3s ease;
+    content: '';
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    background: white;
+    left: 2px;
+    top: 2px;
+    border-radius: 100px;
+}
